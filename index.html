@@ -4,207 +4,377 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Micheal Adeyanju - Full stack developer building responsive web applications, APIs, and polished digital products.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/be4521645b.js" crossorigin="anonymous"></script>
-    <title>Personal Portfolio</title>
+    <title>Micheal Adeyanju | Full Stack Developer</title>
 </head>
 <body>
-    <div id="header">
+    <a href="#top" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <div class="nav-shell">
         <div class="container">
-            <a href="#" class="back-to-top" id="backToTopBtn"><i class="fa-solid fa-angles-up"></i></a>
-            <nav>
-                <img src="" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <nav class="nav">
+                <a href="#top" class="brand" aria-label="Micheal home">
+                    <span class="brand-mark">M</span>
+                    <span class="brand-text">Micheal</span>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteMenu" aria-label="Open navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="nav-panel" id="siteMenu">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#capabilities">Capabilities</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+                </div>
             </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span id="typed-text">Micheal</span><br>a Full Stack Developer</h1>
-                <p>As a full stack developer, I build and maintain complete web<br> applications, combining front-end creativity with back-end efficiency<br> to deliver robust, user-friendly solutions.</p>
-                <a href="#" class="btn btn2 btn3">READ MORE <i class="fa-solid fa-angle-right"></i></a>
-            </div>
-            
         </div>
     </div>
 
-    <!------- about -------->
-
-    <div id="about">
+    <header class="site-header" id="top">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="img/about.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="sub2">I am a passionate full stack developer with a knack for creating responsive and user-friendly web applications. With expertise in front-end and back-end technologies, I enjoy solving complex problems and continuously learning new skills. In my free time, I love exploring new tech trends and contributing to open-source projects.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>FRONT-END DEVELOPER</span><br>Creating Responsive Webpages</li>
-                            <li><span>BACK-END DEVELOPER</span><br>Designing And Management Of Databases</li>
-                            <li><span>PROJECT MANAGEMENT</span><br>Managing Server Infrastructure</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2024-current</span><br>Full-Stack development Training at Flip-To-Tech </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024</span><br>Full stack developer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-    <!------------------ services ---------------->
-
-
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>I craft visually appealing, responsive websites that provide an intuitive user experience, blending aesthetics with functionality and performance.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>I design intuitive, user-friendly interfaces that enhance user experience through thoughtful layout,
-                         seamless interaction, and engaging visuals.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>I integrate intuitive design with robust functionality, 
-                        ensuring seamless user experiences and efficient performance in every application I develop.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-----------------------portfolio----------------->
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="img/ai image.PNG">
-                <div class="layer">
-                    <h3>Ai Image Generator</h3>
-                    <p>I developed an AI Image Generator tool that utilizes the Unsplash API to fetch and display 
-                        high-quality images based on user input.
-                       </p>
-                    <a href="Image generator/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="img/currency converter.PNG">
-                <div class="layer">
-                    <h3>Currency converter</h3>
-                    <p>I designed a Currency Converter that provides accurate, real-time conversion rates between 
-                        different currencies.
+            <div class="hero">
+                <div class="hero-copy" data-reveal="up">
+                    <p class="eyebrow">Full Stack Developer</p>
+                    <h1>
+                        I build web products that feel
+                        <span class="headline-accent">clean, reliable, and ready for real use.</span>
+                    </h1>
+                    <p class="hero-text">
+                        I'm Micheal Adeyanju, a Lagos-based full stack developer open to internships,
+                        freelance work, and junior developer roles. I enjoy building responsive interfaces,
+                        writing backend logic, working with APIs and databases, and debugging problems until they are truly solved.
                     </p>
-                    <a href="Currency Converter/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                        <a href="https://github.com/Adeyanju-dev" class="btn btn-secondary" target="_blank" rel="noreferrer">GitHub Profile</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Based in Lagos, Nigeria</span>
+                        <span><i class="fa-solid fa-briefcase"></i> Open to internships, freelance, and junior roles</span>
+                        <span><i class="fa-solid fa-bug"></i> Strong in debugging, backend logic, and APIs</span>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="img/weather 4.PNG">
-                <div class="layer">
-                    <h3>Weather App </h3>
-                    <p>I created a responsive Weather App that fetches real-time weather data for any city using a 
-                        weather API.
-                    </p>
-                    <a href="Weather App/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
 
-
-<!--------------- contact --------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title2 sub-title3">Contact Me</h1>
-                <p class="sub3"><i class="fa-solid fa-paper-plane"></i> ademivel8@gmail.com</p>
-                <p class="sub3"><i class="fa-solid fa-phone"></i> 08145636375</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--           Footer  ----------->
-<footer>
-    <div class="footer-container">
-        <div class="footer-row">
-            <div class="footer-column">
-                <h3>About Me</h3>
-                <p>I am a full stack developer with a passion for creating dynamic and responsive web applications.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#my-works">My Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Me</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                <div class="hero-visual" data-reveal="left">
+                    <div class="hero-photo-wrap">
+                        <img src="img/about.jpg" alt="Portrait of Micheal Adeyanju" class="hero-photo">
+                    </div>
+                    <div class="hero-stats">
+                        <article>
+                            <strong>Frontend</strong>
+                            <span>Responsive interfaces with clean layouts, React workflows, and attention to detail</span>
+                        </article>
+                        <article>
+                            <strong>Backend</strong>
+                            <span>Python, Django, APIs, data flow, and practical full stack delivery</span>
+                        </article>
+                        <article>
+                            <strong>Problem Solving</strong>
+                            <span>Debugging, database thinking, and steady progress through real technical issues</span>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Micheal. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </header>
 
-  <script src="script.js"></script>
+    <main>
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-heading" data-reveal="up">
+                    <p class="section-label">About</p>
+                    <h2 class="section-title">A developer who enjoys building, learning, and making things work properly.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-story" data-reveal="up">
+                        <p>
+                            I am a full stack developer with a strong interest in backend logic, APIs, databases,
+                            and building complete web applications from frontend to backend. While I care about clean,
+                            responsive user interfaces, I am especially drawn to the problem-solving side of development:
+                            structuring logic, fixing bugs, and making applications work reliably.
+                        </p>
+                        <p>
+                            I am a fast learner who values consistency, attention to detail, and steady improvement.
+                            I enjoy working on products that solve real problems, and I am open to opportunities where I can
+                            contribute, keep learning, and grow into a stronger developer.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div>
+                                <span>Current Focus</span>
+                                <strong>Full stack web apps, APIs, backend logic, ecommerce builds, and real product functionality</strong>
+                            </div>
+                            <div>
+                                <span>What Sets Me Apart</span>
+                                <strong>Fast learning, strong debugging, clean UI instincts, and consistency when solving technical problems</strong>
+                            </div>
+                        </div>
+
+                        <div class="toolbelt" data-reveal="up">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>REST APIs</span>
+                            <span>Debugging</span>
+                        </div>
+                    </div>
+
+                    <div class="about-panel" data-reveal="left">
+                        <div class="tab-buttons" role="tablist" aria-label="About details">
+                            <button class="tab-button active" type="button" data-tab-target="skills" aria-selected="true">Skills</button>
+                            <button class="tab-button" type="button" data-tab-target="experience" aria-selected="false">Experience</button>
+                            <button class="tab-button" type="button" data-tab-target="education" aria-selected="false">Education</button>
+                        </div>
+
+                        <div class="tab-panel active" id="skills" role="tabpanel">
+                            <ul class="detail-list">
+                                <li>
+                                    <span>Frontend Development</span>
+                                    Building responsive user interfaces with HTML, CSS, JavaScript, React, and a clean visual approach.
+                                </li>
+                                <li>
+                                    <span>Backend Development</span>
+                                    Writing backend logic with Python and Django, handling data flow, and supporting full application behavior.
+                                </li>
+                                <li>
+                                    <span>Databases and APIs</span>
+                                    Working with SQL, PostgreSQL, API integration, and practical data-driven functionality.
+                                </li>
+                                <li>
+                                    <span>Debugging and Problem Solving</span>
+                                    Tracing issues carefully, fixing broken behavior, and improving reliability across the stack.
+                                </li>
+                                <li>
+                                    <span>Workflow and Tools</span>
+                                    Using Git, GitHub, structured iteration, and careful implementation to keep projects moving.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-panel" id="experience" role="tabpanel" hidden>
+                            <ul class="detail-list">
+                                <li>
+                                    <span>2024 - Present</span>
+                                    Full stack development training at Flip-To-Tech with hands-on work in frontend and backend development.
+                                </li>
+                                <li>
+                                    <span>Collaborative Team Project</span>
+                                    Led a group project around a school voting platform for prefect elections, contributing to the concept, coordination, planning, and real-world feasibility discussions.
+                                </li>
+                                <li>
+                                    <span>Independent Builds</span>
+                                    Built personal projects focused on UI, APIs, application logic, and growing stronger through repeated practice.
+                                </li>
+                                <li>
+                                    <span>Freelance Preparation</span>
+                                    Started building a freelance presence on Fiverr and actively applying for opportunities while strengthening real-world readiness.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-panel" id="education" role="tabpanel" hidden>
+                            <ul class="detail-list">
+                                <li>
+                                    <span>Honeyland College, Ipaja</span>
+                                    Senior Secondary School education with continued growth into software development through project-based learning.
+                                </li>
+                                <li>
+                                    <span>Frontend Development Certificate</span>
+                                    Formal training and practical development work in frontend foundations and interface building.
+                                </li>
+                                <li>
+                                    <span>Backend Development Certificate</span>
+                                    Training in backend concepts, application logic, and building web functionality beyond the interface.
+                                </li>
+                                <li>
+                                    <span>Continuous Growth</span>
+                                    Ongoing self-study through projects, debugging practice, collaboration, and stronger technical decision-making.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section capabilities-section" id="capabilities">
+            <div class="container">
+                <div class="section-heading" data-reveal="up">
+                    <p class="section-label">Capabilities</p>
+                    <h2 class="section-title">What I can bring to a team or product.</h2>
+                </div>
+
+                <div class="capabilities-grid">
+                    <article class="capability-card" data-reveal="up">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Frontend Craft</h3>
+                        <p>Layouts, components, and interactions that feel modern, responsive, and polished across screen sizes.</p>
+                    </article>
+
+                    <article class="capability-card" data-reveal="up" data-delay="120">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend Logic</h3>
+                        <p>Writing practical backend functionality, structuring application behavior, and connecting the interface to real logic.</p>
+                    </article>
+
+                    <article class="capability-card" data-reveal="up" data-delay="240">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Databases and APIs</h3>
+                        <p>Working with SQL, PostgreSQL, and API-driven workflows to support useful, connected applications.</p>
+                    </article>
+
+                    <article class="capability-card" data-reveal="up">
+                        <i class="fa-solid fa-bug"></i>
+                        <h3>Debugging</h3>
+                        <p>Tracking down issues patiently, understanding why they happen, and fixing them with care instead of guesswork.</p>
+                    </article>
+
+                    <article class="capability-card" data-reveal="up" data-delay="120">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Collaboration</h3>
+                        <p>Contributing to team ideas, leading discussions when needed, and staying consistent while building with others.</p>
+                    </article>
+
+                    <article class="capability-card" data-reveal="up" data-delay="240">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Growth Mindset</h3>
+                        <p>Learning quickly, staying open to feedback, and improving with each project, challenge, and real-world task.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="portfolio">
+            <div class="container">
+                <div class="section-heading section-heading-inline" data-reveal="up">
+                    <div>
+                        <p class="section-label">Selected Work</p>
+                        <h2 class="section-title">Projects that show how I think and build.</h2>
+                    </div>
+                    <p class="section-note">Your strongest project links and live deployments can drop into this layout next without changing the whole design again.</p>
+                </div>
+
+                <div class="featured-project" data-reveal="up">
+                    <div class="project-image">
+                        <img src="img/ai image.PNG" alt="AI image generator project preview">
+                    </div>
+                    <div class="project-content">
+                        <p class="project-tag">Featured Project</p>
+                        <h3>AI Image Generator</h3>
+                        <p>
+                            A search-based image tool built around the Unsplash API, focused on quick results,
+                            clean presentation, and a straightforward user flow.
+                        </p>
+                        <div class="project-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                        </div>
+                        <a href="https://micheal-jpg.github.io/AI-IMAGE-GENERATOR/" target="_blank" rel="noreferrer" class="project-link">
+                            Live Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card" data-reveal="up">
+                        <img src="img/currency converter.PNG" alt="Currency converter project preview">
+                        <div class="project-card-body">
+                            <p class="project-tag">Utility App</p>
+                            <h3>Currency Converter</h3>
+                            <p>Real-time currency conversion with a simple interface built for speed and clarity.</p>
+                            <a href="Currency Converter/index.html" target="_blank" rel="noreferrer">Open Project</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal="up" data-delay="140">
+                        <img src="img/weather 4.PNG" alt="Weather app project preview">
+                        <div class="project-card-body">
+                            <p class="project-tag">API Project</p>
+                            <h3>Weather App</h3>
+                            <p>A responsive weather experience that fetches live data and keeps the flow easy for users.</p>
+                            <a href="Weather App/index.html" target="_blank" rel="noreferrer">Open Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-copy" data-reveal="up">
+                        <p class="section-label">Contact</p>
+                        <h2 class="section-title">Let's build something useful and well-finished.</h2>
+                        <p class="contact-text">
+                            If you need a developer who cares about clean execution, backend problem-solving,
+                            and learning fast on real work, I would be glad to connect.
+                        </p>
+
+                        <div class="contact-list">
+                            <a href="mailto:ademivel8@gmail.com"><i class="fa-solid fa-paper-plane"></i> ademivel8@gmail.com</a>
+                            <a href="https://github.com/Adeyanju-dev" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> github.com/Adeyanju-dev</a>
+                            <a href="https://www.linkedin.com/in/micheal-adeyanju-61a7a033a/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/micheal-adeyanju-61a7a033a</a>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Adeyanju-dev" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/micheal-adeyanju-61a7a033a/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:ademivel8@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrap" data-reveal="left">
+                        <form name="submit-to-google-sheet" class="contact-form">
+                            <label>
+                                <span>Name</span>
+                                <input type="text" name="Name" placeholder="Your name" required>
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="Email" placeholder="Your email" required>
+                            </label>
+                            <label>
+                                <span>Message</span>
+                                <textarea name="Message" rows="6" placeholder="Tell me a little about your project"></textarea>
+                            </label>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            <span id="msg" role="status" aria-live="polite"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Micheal Adeyanju</p>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html> 
-
+</html>
